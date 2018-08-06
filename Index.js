@@ -8,7 +8,7 @@ var ping = Math.round(client.ping)+"ms"
 
 client.on('ready', () => {
   console.log('I am ready!');
-  client.user.setGame("Nothing");
+  client.user.setActivity("Nothing");
 client.on("guildMemberAdd", (member) => {
   client.channel.get('474701496198627329').send('**AsylumPVP** | Welcome ${user} Forums: Comming Soon Store: Comming Soon Ip: Comming Soon');
 });
@@ -27,16 +27,13 @@ client.on('message', message => {
 
   switch (args[0].toLowerCase()){
     case "Broadcast":
-    	client.channels.get('474701277633445899').send(`:fire: ANNOUNCEMENT :fire: 
-@everyone ${message.content.split(" ").slice(2).join(" ")}`)
+    	client.channels.get('474701277633445899').send(`:fire: ANNOUNCEMENT :fire: /n @everyone ${message.content.split(" ").slice(2).join(" ")}`)
     	break;
     case "b": 
-    	client.channels.get('474701277633445899').send(`:fire: ANNOUNCEMENT :fire: 
-@everyone ${message.content.split(" ").slice(2).join(" ")}`)
+    	client.channels.get('474701277633445899').send(`:fire: ANNOUNCEMENT :fire: /n @everyone ${message.content.split(" ").slice(2).join(" ")}`)
     	break;
     case "sb":
-      client.channels.get('474703516741402631').send(`:fire: ANNOUNCEMENT :fire: 
-@everyone ${message.content.split(" ").slice(2).join(" ")}`)
+      client.channels.get('474703516741402631').send(`:fire: ANNOUNCEMENT :fire: /n @everyone ${message.content.split(" ").slice(2).join(" ")}`)
       break;
    /* case "embed"
         var embed = new Discord.RichEmbed();
