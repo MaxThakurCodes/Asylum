@@ -28,11 +28,11 @@ client.on('message', message => {
   switch (args[0].toLowerCase()){
     case "Broadcast":
     	client.channels.get('474701277633445899').send(`:fire: ANNOUNCEMENT :fire:`)
-      client.channels.get.(`@everyone ${message.content.split(" ").slice(2).join(" ")}`)
+      client.channels.get('474701277633445899').send(`@everyone ${message.content.split(" ").slice(2).join(" ")}`)
     	break;
     case "b": 
     	client.channels.get('474701277633445899').send(`:fire: ANNOUNCEMENT :fire:`)
-      client.channels.get.(`@everyone ${message.content.split(" ").slice(2).join(" ")}`)
+      client.channels.get.('474701277633445899').send(`@everyone ${message.content.split(" ").slice(2).join(" ")}`)
     	break;
     case "sb":
       client.channels.get('474703516741402631').send(`:fire: ANNOUNCEMENT :fire:`)
