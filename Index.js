@@ -32,6 +32,8 @@ client.on('message', message => {
     case "b": 
     	client.channels.get('474701277633445899').send(`${message.content.split(" ").slice(2).join(" ")}`)
     	break;
+    case "sb":
+      client.channels.get('474703516741402631').send(`${message.content.split(" ").slice(2).join(" ")}`)
    /* case "embed"
         var embed = new Discord.RichEmbed();
         .addField("hey ", `${message.content.split(" ").slice(2).join(" ")}`)
