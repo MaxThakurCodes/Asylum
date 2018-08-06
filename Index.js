@@ -32,8 +32,7 @@ client.on('message', message => {
     case "b": 
     	client.channels.get('474701277633445899').send(`${message.content.split(" ").slice(2).join(" ")}`)
     	break;
-    case "embed":
-        message.channel.sendMessage("Please tell me the title of the embed", )
+    case "embed"
         var embed = new Discord.RichEmbed()
         .addField("hey ", `${message.content.split(" ").slice(2).join(" ")}`)
         .setColor(0x03A9F4)
