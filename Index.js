@@ -38,7 +38,7 @@ client.on('message', message => {
        .setColor(0xff0000)
         client.channel.get('474701277633445899').send(embed)
     	break;
-    case "sb":
+    /*case "sb":
       var embed = new Discord.RichEmbed()
     	 .addField(":fire: ANNOUNCEMENT :fire:", `${message.content.split(" ").slice(2).join(" ")}`)
        .setColor(0xff0000)
