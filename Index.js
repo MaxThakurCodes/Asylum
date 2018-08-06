@@ -3,6 +3,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const prefix = "!"
 var Token = 'NDc1NDc0MjgyNDQ5OTkzNzU3.DklqoA.2eBTqw3bq_zPFXhxyEouF3dqgC8'
+var ping = Math.round(client.ping)+"ms"
 
 
 client.on('ready', () => {
@@ -55,7 +56,7 @@ client.on('message', message => {
           break;
       case 'info':
           var embed = new Discord.RichEmbed()
-          .addField("404 No Name Bot","All the info for 404 No Name Bot " )
+          .addField("Asylum Bot","All the info for Asylum " )
           .addField("Ping", Math.round(client.ping)+"ms")
           .addField("Users", client.users.size+" users")
           .addField("Servers", client.guilds.size+" servers")
