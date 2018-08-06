@@ -27,16 +27,22 @@ client.on('message', message => {
 
   switch (args[0].toLowerCase()){
     case "Broadcast":
-    	client.channels.get('474701277633445899').send(`:fire: ANNOUNCEMENT :fire:`)
-      client.channels.get('474701277633445899').send(`@everyone ${message.content.split(" ").slice(2).join(" ")}`)
+      var embed = new Discord.RichEmbed();
+    	 .addField(":fire: ANNOUNCEMENT :fire:", `${message.content.split(" ").slice(2).join(" ")}`)
+       .setColor(#ff0000)
+        client.get('474701277633445899').send(embed)
     	break;
     case "b": 
-    	client.channels.get('474701277633445899').send(`:fire: ANNOUNCEMENT :fire:`)
-      client.channels.get('474701277633445899').send(`@everyone ${message.content.split(" ").slice(2).join(" ")}`)
+    	var embed = new Discord.RichEmbed();
+    	 .addField(":fire: ANNOUNCEMENT :fire:", `${message.content.split(" ").slice(2).join(" ")}`)
+       .setColor(#ff0000)
+        client.get('474701277633445899').send(embed)
     	break;
     case "sb":
-      client.channels.get('474703516741402631').send(`:fire: ANNOUNCEMENT :fire:`)
-      client.channels.get('474703516741402631').send(`@everyone ${message.content.split(" ").slice(2).join(" ")}`)
+      var embed = new Discord.RichEmbed();
+    	 .addField(":fire: ANNOUNCEMENT :fire:", `${message.content.split(" ").slice(2).join(" ")}`)
+       .setColor(#ff0000)
+        client.get('474703516741402631').send(embed)
       break;
    /* case "embed"
         var embed = new Discord.RichEmbed();
