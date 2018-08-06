@@ -37,7 +37,7 @@ client.on('message', message => {
         .addField("hey ", `${message.content.split(" ").slice(2).join(" ")}`)
         .setColor(0x03A9F4)
         message.channel.sendEmbed(embed)
-        break; */
+        break; 
      case "help":
           var embed = new Discord.RichEmbed()
           .setTitle("HELP")
