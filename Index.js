@@ -1,14 +1,14 @@
 
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = "!"
+const prefix = "! "
 var Token = 'NDc1NDc0MjgyNDQ5OTkzNzU3.DklqoA.2eBTqw3bq_zPFXhxyEouF3dqgC8'
 var ping = Math.round(client.ping)+"ms"
 
 
 client.on('ready', () => {
   console.log('I am ready!');
-  client.user.setGame(ping);
+  client.user.setActivity(ping);
 client.on("guildMemberAdd", (member) => {
   client.channel.get('474701496198627329').send('**AsylumPVP** | Welcome ${user} Forums: Comming Soon Store: Comming Soon Ip: Comming Soon');
 });
