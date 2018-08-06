@@ -27,19 +27,19 @@ client.on('message', message => {
 
   switch (args[0].toLowerCase()){
     case "Broadcast":
-      var embed = new Discord.RichEmbed();
+      var embed = new Discord.RichEmbed()
     	 .addField(":fire: ANNOUNCEMENT :fire:", `${message.content.split(" ").slice(2).join(" ")}`)
        .setColor(#ff0000)
         client.get('474701277633445899').send(embed)
     	break;
     case "b": 
-    	var embed = new Discord.RichEmbed();
+    	var embed = new Discord.RichEmbed()
     	 .addField(":fire: ANNOUNCEMENT :fire:", `${message.content.split(" ").slice(2).join(" ")}`)
        .setColor(#ff0000)
         client.get('474701277633445899').send(embed)
     	break;
     case "sb":
-      var embed = new Discord.RichEmbed();
+      var embed = new Discord.RichEmbed()
     	 .addField(":fire: ANNOUNCEMENT :fire:", `${message.content.split(" ").slice(2).join(" ")}`)
        .setColor(#ff0000)
         client.get('474703516741402631').send(embed)
