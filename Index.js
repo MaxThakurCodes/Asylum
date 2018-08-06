@@ -8,7 +8,7 @@ var ping = Math.round(client.ping)+"ms"
 
 client.on('ready', () => {
   console.log('I am ready!');
-  client.user.setActivity(ping);
+  client.user.setActivity("Nothing");
 client.on("guildMemberAdd", (member) => {
   client.channel.get('474701496198627329').send('**AsylumPVP** | Welcome ${user} Forums: Comming Soon Store: Comming Soon Ip: Comming Soon');
 });
