@@ -30,19 +30,19 @@ client.on('message', message => {
       var embed = new Discord.RichEmbed()
     	 .addField(":fire: ANNOUNCEMENT :fire:", `${message.content.split(" ").slice(2).join(" ")}`)
        .setColor(0xff0000)
-        client.get('474701277633445899').send(embed)
+        client.channel.get('474701277633445899').send(embed)
     	break;
     case "b": 
     	var embed = new Discord.RichEmbed()
     	 .addField(":fire: ANNOUNCEMENT :fire:", `${message.content.split(" ").slice(2).join(" ")}`)
        .setColor(0xff0000)
-        client.get('474701277633445899').send(embed)
+        client.channel.get('474701277633445899').send(embed)
     	break;
     case "sb":
       var embed = new Discord.RichEmbed()
     	 .addField(":fire: ANNOUNCEMENT :fire:", `${message.content.split(" ").slice(2).join(" ")}`)
        .setColor(0xff0000)
-        client.get('474703516741402631').send(embed)
+        client.channel.get('474703516741402631').send(embed)
       break;
    /* case "embed"
         var embed = new Discord.RichEmbed();
