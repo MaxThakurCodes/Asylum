@@ -2,7 +2,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const prefix = "! "
-var Token = 'NDc1NDc0MjgyNDQ5OTkzNzU3.DklqoA.2eBTqw3bq_zPFXhxyEouF3dqgC8'
+var Token = ''
 var ping = Math.round(client.ping)+"ms"
 
 
